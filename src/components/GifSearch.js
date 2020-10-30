@@ -5,8 +5,8 @@ export default class GifSearch extends React.Component{
 
 handle=(e)=>{
      e.preventDefault();
-   // console.log('e.target.value',e.target.name.value)
-   this.props.search(e.target.name.value)
+     console.log(`query`,e.target.name.value)
+    this.props.search(e.target.name.value)
 }
 render(){
 
@@ -16,7 +16,6 @@ render(){
                 <input type="text" name="name" id="name"/>
                 <button  >find Gifs</button>
       </form>
-   
        )
 }
 
